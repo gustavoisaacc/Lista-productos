@@ -1,0 +1,32 @@
+.header{
+  width: 100vw;
+  background-color: var(--primary);
+}
+
+.header--container{
+  max-width: 90%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin: 0 auto;
+}
+
+.header__add{
+  justify-self: end;
+  background-color: #e1e1e1;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--primary);
+}
+
+
+.logo--white{
+  color: var(--white);
+  transform: rotate(90deg);
+  font-size: 2rem;
+}
+
+.header__logo{
+  justify-self: start;
+}
