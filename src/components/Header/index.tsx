@@ -7,10 +7,10 @@ function Header() {
   return (
     <header className="header">
       <div className="header--container">
-        <div className="header__logo">
+        <Link to="/" className="header__logo">
           <SiReactrouter className="logo--white" />
           <span className="logo--white rotate">AIFOS</span>
-        </div>
+        </Link>
         <div className="header__add">
           <Link to="/nuevo-producto" className="add--white">
             Nuevo Producto

@@ -13,6 +13,8 @@
   --primary: #535bf2;
   --white: #fff;
   --blak: #000;
+  --gray:#e1e1e1;
+  --gray-dark: #6d6c6c;
 }
 *{
   padding: 0;
@@ -36,4 +38,10 @@ body{
 
 .height{
   height: 100vh;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }

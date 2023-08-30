@@ -1,0 +1,52 @@
+.form {
+  width: 90%;
+  height: 50rem;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.campo label{
+  margin-bottom: 1rem;
+}
+
+.campo input, .btn{
+  padding: 1rem;
+  border-radius: .8rem;
+  outline: none;
+  border:1px solid var(--gray-dark);
+}
+
+select{
+  padding: 1rem;
+  border-radius: .8rem;
+  outline: none;
+  border:1px solid var(--gray-dark);
+}
+
+.btn{
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #3f48ed;
+  cursor: pointer;
+}
+table{
+  margin: 5rem auto;
+}
+table,th,td{
+  border: 1px solid red;
+  border-collapse: collapse;
+  padding: 1rem;
+}
