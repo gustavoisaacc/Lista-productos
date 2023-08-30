@@ -1,6 +1,8 @@
+import { Products } from "../type";
 import { SET_PRODUCTS } from "./type";
 
-export const setProducts = (payload) => ({
-  type: SET_PRODUCTS,
-  payload,
-});
+export const createNewProducts = (product: Products) => {
+  return () => {
+    console.log(product);
+  };
+};
