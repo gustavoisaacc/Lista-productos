@@ -1,4 +1,4 @@
-import { SET_PRODUCTS } from "../action/type";
+import { SET_PRODUCTS, SET_PRODUCTS_EXITO } from "../action/type";
 
 const initialValue = {
   products: [],
@@ -9,7 +9,17 @@ const initialValue = {
 export const productReducer = (state = initialValue, action) => {
   switch (action.type) {
     case SET_PRODUCTS:
-      return { ...state };
+      return {
+        ...state,
+        loading: true,
+      };
+
+    case SET_PRODUCTS_EXITO:
+      return {
+        ...state,
+        loading: false,
+        products: [...state.products, action.payload],
+      };
 
     default:
       return state;

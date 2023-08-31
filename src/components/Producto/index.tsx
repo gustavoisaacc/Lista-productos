@@ -17,7 +17,9 @@ function Producto() {
   const newProduct = (product: Products) =>
     dispatch(createNewProducts(product));
 
-  const saveProduct = (e: { preventDefault: () => void }) => {
+  const saveProduct = (
+    e: React.ChangeEvent<HTMLInputElement | EventTarget>
+  ) => {
     e.preventDefault();
 
     newProduct({
