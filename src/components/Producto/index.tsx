@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 import { createNewProducts } from "../../action";
 import { Products } from "../../type";
 
+import { useNavigate } from "react-router-dom";
+
 const tipo = ["galletas", "fideo", "jugo", "caramelos", "legumbre", "vario"];
 
 function Producto() {
@@ -14,6 +16,7 @@ function Producto() {
   const [category, setCategory] = useState<string>("");
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const newProduct = (product: Products) =>
     dispatch(createNewProducts(product));
 
@@ -28,6 +31,7 @@ function Producto() {
       price,
       category,
     });
+    navigate("/");
   };
 
   return (
@@ -54,7 +58,7 @@ function Producto() {
           value={price}
           setValue={setPrice}
         />
-        <select value={category} onChange={setCategory}>
+        <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="vario">seleccione una categoria</option>
           {tipo.map((item) => {
             return (

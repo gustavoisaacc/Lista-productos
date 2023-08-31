@@ -1,11 +1,9 @@
-import { Products } from "../../type";
-
-function Tabla(props: Products) {
+function Tabla({ item }) {
   return (
     <tr>
-      <td>{props.name}</td>
-      <td>{props.grams}</td>
-      <td>{props.price}</td>
+      <td>{item.name}</td>
+      <td>{item.grams}</td>
+      <td>{item.price}</td>
       <td>
         <p>editar</p>
         <p>eliminar</p>

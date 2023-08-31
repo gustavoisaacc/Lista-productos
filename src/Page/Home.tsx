@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
 import Tabla from "../components/Producto/Tabla";
-
-const pro = Array(10).fill("item");
+import { Products } from "../type";
 
 function Home() {
+  const productos = useSelector((state) => state.products.products);
+
   return (
     <table>
       <thead>
@@ -14,8 +16,8 @@ function Home() {
         </tr>
       </thead>
       <tbody>
-        {pro.map((item, ind) => {
-          return <Tabla key={ind} item={item} />;
+        {productos.map((item: Products) => {
+          return <Tabla key={item.name} item={item} />;
         })}
       </tbody>
     </table>
