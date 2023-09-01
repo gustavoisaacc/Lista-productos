@@ -17,7 +17,11 @@ function Home() {
       </thead>
       <tbody>
         {productos.map((item: Products) => {
+<<<<<<< HEAD
           return <Tabla key={item.id} item={item} />;
+=======
+          return <Tabla key={item.name} item={item} />;
+>>>>>>> 9be251b (add product in home)
         })}
       </tbody>
     </table>
