@@ -6,10 +6,6 @@ import { createNewProducts } from "../../action";
 import { Products } from "../../type";
 import { useNavigate } from "react-router-dom";
 
-import { useNavigate } from "react-router-dom";
-
-import { useNavigate } from "react-router-dom";
-
 const tipo = ["galletas", "fideo", "jugo", "caramelos", "legumbre", "vario"];
 
 function Producto() {
@@ -19,7 +15,6 @@ function Producto() {
   const [category, setCategory] = useState<string>("");
 
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const newProduct = (product: Products) =>
     dispatch(createNewProducts(product));
 
