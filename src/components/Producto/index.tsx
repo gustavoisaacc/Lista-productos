@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
+
 const tipo = ["galletas", "fideo", "jugo", "caramelos", "legumbre", "vario"];
 
 function Producto() {

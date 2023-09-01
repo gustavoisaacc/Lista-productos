@@ -1,17 +1,8 @@
-type Props = {
-  item: Array<{
-    id: string;
-    name: string;
-    grams: number;
-    price: number;
-  }>;
-};
-
-const handelCLick = (id) => {
+const handelCLick = (id: string) => {
   console.log(id);
 };
 
-function Tabla({ item }: Props) {
+function Tabla({ item }) {
   return (
     <tr className="item__products">
       <td>{item.name}</td>

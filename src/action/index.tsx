@@ -9,6 +9,8 @@ import {
 
 import Swal from "sweetalert2";
 
+import Swal from "sweetalert2";
+
 export const createNewProducts = (product: Products) => {
   return (
     dispatch: (arg0: { type: string; payload?: boolean | Products }) => void
