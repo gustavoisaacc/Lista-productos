@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import { Products } from "../../type";
-
 type Props = {
   item: Array<{
     id: string;
@@ -17,11 +14,6 @@ const handelCLick = (id) => {
 function Tabla({ item }: Props) {
   return (
     <tr className="item__products">
-=======
-function Tabla({ item }) {
-  return (
-    <tr>
->>>>>>> 9be251b (add product in home)
       <td>{item.name}</td>
       <td>{item.grams}</td>
       <td>{item.price}</td>
