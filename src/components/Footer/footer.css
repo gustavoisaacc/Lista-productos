@@ -4,4 +4,6 @@ footer{
   background-color: var(--primary);
   display: grid;
   place-items: center;
+  margin-top: 15rem;
+  color: var(--white);
 }

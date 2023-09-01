@@ -43,10 +43,37 @@ select{
   cursor: pointer;
 }
 table{
-  margin: 5rem auto;
+  margin: 0% auto;
 }
+
 table,th,td{
-  border: 1px solid red;
-  border-collapse: collapse;
+  width: 95%;
   padding: 1rem;
+}
+
+.table--title th {
+  background-color: var(--gray-dark);
+  color: white;
+}
+.table__btn {
+  border-radius: .5rem;
+  border: none;
+  color: var(--white);
+  padding: .2rem 1rem;
+  cursor: pointer;
+}
+
+.btn--primary{
+  background: var(--primary);
+}
+.btn--delete{
+  background: rgb(193, 39, 39);
+}
+
+.item__products td{
+  border-bottom: 1px solid var(--gray);
+}
+
+.item__products:nth-child(2n){
+  background-color: var(--gray);
 }

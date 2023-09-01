@@ -1,5 +1,10 @@
 import { Products } from "../type";
-import { SET_PRODUCTS, SET_PRODUCTS_ERROR, SET_PRODUCTS_EXITO } from "./type";
+import {
+  GET_PRODUCT_EDIT,
+  SET_PRODUCTS,
+  SET_PRODUCTS_ERROR,
+  SET_PRODUCTS_EXITO,
+} from "./type";
 
 export const createNewProducts = (product: Products) => {
   return (dispatch) => {
@@ -16,7 +21,7 @@ const guardadProducto = () => ({
   type: SET_PRODUCTS,
 });
 
-const guardadProductoExito = (producto: Products) => ({
+const guardadProductoExito = (producto: Products[]) => ({
   type: SET_PRODUCTS_EXITO,
   payload: producto,
 });
@@ -24,4 +29,9 @@ const guardadProductoExito = (producto: Products) => ({
 const guardadProductoError = (state: boolean) => ({
   type: SET_PRODUCTS_ERROR,
   payload: state,
+});
+
+const editarProducto = (id: string) => ({
+  type: GET_PRODUCT_EDIT,
+  payload: id,
 });
